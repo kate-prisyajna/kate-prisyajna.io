@@ -1,0 +1,47 @@
+/*  ICONS  */
+
+.icon {
+  
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  background-image: url("../img/user-tools-icons.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-property: background-position;
+  transition-duration: 0;
+  transition-delay: 0.5s;
+  transition-timing-function: linear;
+  
+}
+
+.icon:hover {
+  
+  animation: iconchange 1s linear;
+  
+}
+
+.icon--emptycart {
+  
+  background-position: left top;
+  
+}
+
+.icon--search {
+  
+  background-position: right top;
+  
+}
+
+.icon--emptycart:hover {
+  
+  background-position: left bottom;
+  
+}
+
+.icon--search:hover {
+  
+  background-position: right bottom;
+  
+}

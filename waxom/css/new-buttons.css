@@ -1,0 +1,41 @@
+/*  BUTTONS  */
+
+.btn {
+  
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 1px solid inherit;
+  border-radius: 3px;
+  background-color: transparent;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+.btn--action {
+  
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 28px;
+  background-color: #998675;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 50px;
+  text-transform: uppercase;
+  box-shadow: inset 0px -3px 0 0 #736357;
+  
+}
+
+.btn--action:hover {
+  
+  color: var(--txt-color-active);
+  
+}

@@ -1,0 +1,155 @@
+/*  CARD COMPONENT  */
+
+.card {
+  
+  position: relative;
+  width: 270px;
+  height: 213px;
+  margin: 0 var(--space);
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  
+}
+
+.card::after {
+  
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+  right: 100px;
+  height: 3px;
+  background-color: #f1eee9;
+  transition-property: background-color;
+  transition-duration: 0;
+  transition-delay: 0.5s;
+  transition-timing-function: linear;
+  
+}
+
+.card:hover::after {
+  
+  background-color: var(--txt-color-active);
+  animation: iconchange 1s linear;
+  
+}
+
+.card__title {
+  
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: capitalize;
+  color: var(--txt-color-title);
+  transition-property: color;
+  transition-duration: 0;
+  transition-delay: 0.5s;
+  transition-timing-function: linear;
+  
+}
+
+.card:hover .card__title {
+  
+  color: var(--txt-color-active);
+  animation: iconchange 1s linear;
+  
+}
+
+.card__description {
+  
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--txt-color-plain);
+  
+}
+
+.card__icon {
+  
+  position: relative;
+  display: block;
+  height: 50px;
+  margin-bottom: 28px;
+  
+}
+
+.card__icon::after {
+  
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -25px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  background-image: url("../img/services-icons.png");
+  background-repeat: no-repeat;
+  transition-property: background-position;
+  transition-duration: 0;
+  transition-delay: 0.5s;
+  transition-timing-function: linear;
+  
+}
+
+.card:hover .card__icon::after {
+  
+  animation: iconchange 1s linear;
+  
+}
+
+.card__icon--design::after {
+  
+  background-position: 0 0;
+  
+}
+
+.card:hover .card__icon--design::after {
+  
+  background-position: 0 -50px;
+  
+}
+
+.card__icon--development::after {
+  
+  background-position: -50px 0;
+  
+}
+
+.card:hover .card__icon--development::after {
+  
+  background-position: -50px -50px;
+  
+}
+
+.card__icon--customization::after {
+  
+  background-position: -100px 0;
+  
+}
+
+.card:hover .card__icon--customization::after {
+  
+  background-position: -100px -50px;
+  
+}
+
+.card__icon--marketing::after {
+  
+  background-position: -150px 0;
+  
+}
+
+.card:hover .card__icon--marketing::after {
+  
+  background-position: -150px -50px;
+  
+}

@@ -1,0 +1,50 @@
+/*  REALIZATION SECTION  */
+
+.realization {
+  
+  text-align: center;
+  background-color: #fbfaf8;
+  
+}
+
+.realization__wrapper {
+  
+  padding-top: 80px;
+  padding-bottom: 500px;
+  background-image: 
+    url("../img/realization-bg-center.jpg"), 
+    url("../img/realization-bg-left.jpg"), 
+    url("../img/realization-bg-right.jpg");
+  background-position: 
+    bottom center, 
+    bottom left, 
+    bottom right;
+  background-repeat: no-repeat;
+  
+}
+
+.realization__title {
+  
+  margin: 0 215px;
+  margin-bottom: 17px;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1;
+  color: var(--txt-color-title);
+  
+}
+
+.realization__description {
+  
+  margin: 0 215px;
+  margin-bottom: 17px;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--txt-color-plain);
+  
+}

@@ -1,0 +1,43 @@
+/*  BRAND LOGO  */
+
+.logo, 
+.logo__link, 
+.logo__img {
+  
+  display: block;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.logo__link {
+  
+  display: inline-block;
+  background-color: transparent;
+  color: var(--txt-color-invert);
+  text-decoration: none;
+  
+}
+
+.logo__img {
+  
+  width: 181px;
+  height: 56px;
+  overflow: hidden;
+  fill: #ffffff;
+  
+}
+
+.logo--header {
+  
+  width: 270px;
+  margin-left: var(--space);
+  margin-right: var(--space);
+  
+}
+
+.logo__link:hover .logo__img {
+  
+  fill: var(--txt-color-active);
+  
+}

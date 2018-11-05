@@ -1,0 +1,55 @@
+/*  PRESET  */
+
+:root {
+  
+  --base-width: 1200px;
+  --min-width: 320px;
+  --space: 15px;
+  
+  --txt-color-title: #555555;
+  --txt-color-plain: #8c8c8c;
+  --txt-color-invert: #ffffff;
+  --txt-color-active: #c7b299;
+  
+}
+
+header, 
+footer, 
+main, 
+section {
+  
+  display: block;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.container {
+  
+  width: var(--base-width);
+  margin: 0 auto;
+  padding: 0;
+  
+}
+
+.clearfix::after {
+  
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+.visually-hidden {
+  
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: none;
+  margin: -1px;
+  white-space: nowrap;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  
+}

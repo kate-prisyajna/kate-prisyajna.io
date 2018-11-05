@@ -1,0 +1,48 @@
+/*  ACTION  */
+
+.action {
+  
+  padding: 48px 0;
+  background-color: #211b19;
+  background-image: linear-gradient(to right, #211b19, #4e3427);
+  color: var(--txt-color-invert);
+  text-align: left;
+  
+}
+
+.action__wrapper {
+  
+  position: relative;
+  margin: 0 var(--space);
+  
+}
+
+.action__title {
+  
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 1;
+  
+}
+
+.action__call {
+  
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1;
+  color: #615855;
+  
+}
+
+.highlighted {
+  
+  color: var(--txt-color-active);
+  
+}

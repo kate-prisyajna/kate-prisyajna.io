@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Waxom Home Page</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600" rel="stylesheet">
+  <link rel="stylesheet" href="css/new-animation.css">
+  <link rel="stylesheet" href="css/new-preset.css">
+  <link rel="stylesheet" href="css/new-layout.css">
+  <link rel="stylesheet" href="css/new-logo.css">
+  <link rel="stylesheet" href="css/new-navigation.css">
+  <link rel="stylesheet" href="css/new-icon.css">
+  <link rel="stylesheet" href="css/new-card.css">
+  <link rel="stylesheet" href="css/new-realization.css">
+  <link rel="stylesheet" href="css/new-action.css">
+  <link rel="stylesheet" href="css/new-buttons.css">
+  <link rel="stylesheet" href="css/new-presentation.css">
+  <link rel="stylesheet" href="css/new-excellent.css">
+</head>
+<body>
+  <!-- SVG SPRITE -->
+  <svg style="display: none">
+    <symbol id="logo" viewBox="0 0 181 56">
+      <path d="M413.108,50.713H402.6l5.254,9.191Zm-11.822.767-5.254,9.191H406.54Zm18.39,9.191-5.254-9.191-5.254,9.191h10.508ZM409.168,62.2l5.254,9.188,5.254-9.188H409.168Zm-13.136,0,5.254,9.188L406.54,62.2H396.032Zm-6.567,9.952h10.506l-5.253-9.187Zm36.778,0-5.253-9.187-5.252,9.187h10.5Zm-18.389-32.16-5.254,9.19h10.508ZM420.99,82.874l5.253-9.188h-10.5Zm-26.272,0,5.253-9.188H389.465Zm-11.821.767H393.4l-5.253-9.19Zm49.914,0-5.254-9.19-5.254,9.19h10.508ZM422.3,85.172l5.254,9.187,5.254-9.187H422.3Zm-13.135,0,5.254,9.187,5.254-9.187H409.168Zm-21.017,9.187,5.253-9.187H382.9Zm-11.82.769h10.5l-5.254-9.188Zm26.269,0h10.508l-5.254-9.188Zm13.138,0h10.5l-5.253-9.188Zm18.387-9.188-5.252,9.188h10.5Z" transform="translate(-376.344 -40)"/>
+      <image x="65.656" y="15" width="115" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAAAaCAQAAAAusav/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiChMKCx0SIcA9AAADmElEQVRYw82Y22GcOhCGx+mAFmhBKUEugVOCWlBK4JRASsAlyCXgEtgStCV8eUCAruvN2kksPewyGsT8c9OMnuilF5FXeXRs77/J9eEd/sbAAKCQbDpgjJ47PKALvglYC+oXm4KwAlOxNAA+ejZVOB0A9l/DuAemBaArFlfAHE9LFU7r3S82b1nEAnP4r26oYvpz4n0mzFZ8bfD7g6Pu2LV4/XIztlU9vVj29FOmqRlY/jWE+2FukTcXyzpY2VTh9JBEr9BhmPEAeGaGY0XhcBVFCR0OF3EKmon12MNk/AZ3nAAGd/CpjGcbgX4unA4azxUYWDI427RZLrYB4ILDhf/uiOcRWCvRnSq4YyYfSwLBAg5BsWR8Q9ghp+sTpuCbaWgFfCP9nG+MgMdGfAYfRGp7TAp+F3EKAaQY8YCPgG4wFR4Y0Qgq5HtPF3aYEvoaw7SNNOTDh/OV3P49Y6EKlbh1X6hyyEqTBfBZjlCB2icwlwT6frBZXJVu8kgbCjhLg+6q0ZzPKbFnCiuHbRuJcFP1nHCVCdEHv8vpKzC1RYrBt+jvHyUbsDyeu8NB50zQ+hkcF6S73XKeuUGfABcTdCUNTRA2SOnjnZWszmBuXuDCzkvk5kMjCZ42GSOYJd8t+tLaLHaXvlIc+GruFXoGLBaLQVdhdiExUYmituJOT7MV3zrgNOgV5/AZy5a801xrqrlXH6dVfBiUX9FhLVXT3BA/V8ItmC0635Ku7EWu0ok5no2I/BSRN3mt0NMO04gTLT/lWZ7CfJYf1d7vTS7hNx7duz1j/5F+M51jZHoduVHchqlKFOhGStIVa24Om0bm9uXb1nzfae+05mY7JSqx5Ua/SC/6oL8Ei8T2/f+uOwgrWq7yXd5EyRjRLyKimzYdAseDI4d5kZcgdC+DXA+YG2AjIp0MIvJScah7QGoZReRZLvKfXMVEgfB6wKm9pSR38t8bhZGHkF7GLLvubVn9FsFRv0OwidOmBUFeA02NonLbfb3DOZtOW4uD7dagbL0mYMwq2XitBK9Cqbg/5wVBWtH2lYjd9z7rsE+DuZdTrhCaUEiXGu8rla/FBxFVBdRppxO4CaX2WVruh9R4F5zfgrmX6+Xxv1TA5CKOWCxT6CAkiLkHg6p+6/SO4ehWHS50nan3fBrM9qVkqyvdRdzFApjD8bLXo626SWetQRdUtI8pU81DMJ/4QPqqDBWOhMevt/fcGuffD49f5NzURAXooxAAAAAASUVORK5CYII="/>
+    </symbol>
+  </svg>
+  <!-- /SVG SPRITE -->
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container clearfix">
+      <!-- BRAND LOGO -->
+      <div class="logo logo--header">
+        <a class="logo__link" href="index.html">
+          <svg class="logo__img" width="181" heght="56">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </a>
+      </div>
+      <!-- /BRAND LOGO -->
+      <!-- MAIN NAVIGATION -->
+      <nav class="navigation navigation--main">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link" href="#">Home</a></li>
+          <li class="navigation__item"><a class="navigation__link navigation__link--active" href="#">About us</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Portfolio</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Features</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Blog</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Pricing</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Shortcodes</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- /MAIN NAVIGATION -->
+      <!-- USER TOOLS -->
+      <div class="user-tools clearfix">
+        <!-- CART -->
+        <div class="cart">
+          <span class="icon icon--emptycart"></span>
+        </div>
+        <!-- /CART -->
+        <!-- SEARCH -->
+        <div class="search">
+          <span class="icon icon--search"></span>
+        </div>
+        <!-- /SEARCH -->
+      </div>
+      <!-- /USER TOOLS -->
+    </div>
+  </header>
+  <!-- /PAGE HEADER -->
+  <main class="page-main">
+    <h1 class="visually-hidden">Waxom Company</h1>
+    <!-- PROMO SLIDER -->
+    <section class="promo"></section>
+    <!-- /PROMO SLIDER -->
+    <!-- SERVICES -->
+    <section class="services">
+      <h2 class="visually-hidden">Our services</h2>
+      <div class="container">
+        <div class="card">
+          <div class="card__icon card__icon--design"></div>
+          <h3 class="card__title">Web & App Design</h3>
+          <p class="card__description">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon card__icon--development"></div>
+          <h3 class="card__title">Development</h3>
+          <p class="card__description">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon card__icon--customization"></div>
+          <h3 class="card__title">Customization</h3>
+          <p class="card__description">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon card__icon--marketing"></div>
+          <h3 class="card__title">Marketing</h3>
+          <p class="card__description">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+        </div>
+      </div>
+    </section>
+    <!-- /SERVICES -->
+    <!-- REALIZATION -->
+    <section class="realization">
+      <div class="container realization__wrapper">
+        <h2 class="realization__title">Waxom is Realization of your Ideas</h2>
+        <p class="realization__description">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+      </div>
+    </section>
+    <!-- /REALIZATION -->
+    <!-- ACTION -->
+    <section class="action">
+      <div class="container">
+        <div class="action__wrapper">
+          <h2 class="action__title"><span class="highlighted">Waxom</span> Multipurpose WordPress Theme</h2>
+          <p class="action__call">Don't Forget to Rate the Template. Thanks so much!</p>
+          <a href="#" class="btn btn--action">Purchase Now</a>
+        </div>
+      </div>
+    </section>
+    <!-- /ACTION -->
+    <!-- PRESENTATION -->
+    <section class="presentation presentation--video">
+      <video class="presentation__media" poster="video/PC-Typing.jpg" preload="metadata">
+        <source src="video/PC-Typing.mp4" type="video/mp4">
+        <source src="video/PC-Typing.ogv" type="video/ogv">
+        <source src="video/PC-Typing.webm" type="video/webm">
+        Your browser doesn't support HTML5 video tag.
+      </video>
+      <div class="container presentation__content">
+        <span class="presentation__control presentation__control--play"></span>
+        <h2 class="presentation__title">Waxom video presentation</h2>
+        <p class="presentation__description">Investigationes demonstraverunt lectores legere me lius quod ii legunt<br> saepius, qui sequitur mutationem consuetudium.</p>
+        <span class="presentation__time">00:00</span>
+      </div>
+    </section>
+    <!-- /PRESENTATION -->
+    <!-- EXCELLENT -->
+    <section class="excellent">
+      <div class="container">
+        <div class="excellent__content">
+          <h2 class="excellent__title">Excellent for Mobile Devices</h2>
+          <p class="excellent__text">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+          <ul class="excellent__list">
+            <li>Nam liber tempor cum soluta nobis eleifend option;</li>
+            <li>Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
+            <li>Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
+            <li>Investigationes demonstraverunt lectores.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- /EXCELLENT -->
+  </main>
+  <script src="js/html5video.js"></script>
+</body>
+</html>
